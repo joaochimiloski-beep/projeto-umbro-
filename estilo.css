@@ -1,0 +1,43 @@
+<!DOCTYPE html>  
+<html lang="pt-br">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Informações sobre a Umbro</title>  
+    <!-- Linha adicionada para vincular o arquivo CSS externo chamado style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>  
+<body>  
+    <header>
+        <h1>INFORMAÇÃO SOBRE A UMBRO</h1>  
+    </header>
+
+    <main>
+        <section class="introducao">
+            <p>A Umbro é uma das marcas esportivas mais tradicionais do mundo, famosa por sua ligação com o futebol e pelo logotipo com o duplo diamante.</p>  
+        </section>
+
+        <section class="historia">
+            <h2>História e Fundação</h2>
+            <p><strong>Fundação:</strong> A marca foi fundada em 23 de maio de 1924 na Inglaterra (em Wilmslow, perto de Manchester) pelos irmãos Harold e Wallace Humphreys.</p>  
+            <p><strong>Nome:</strong> O nome "Umbro" vem da junção de <em>Humphreys</em> e <em>Brothers</em> (Irmãos Humphreys).</p>  
+            <p><strong>Tradição no Futebol:</strong> A Umbro esteve presente em grandes momentos históricos. Ela vestiu a Seleção Brasileira na conquista do Tetra na Copa do Mundo de 1994 e a Seleção Inglesa no título de 1966.</p>  
+        </section>
+
+        <section class="atuacao">
+            <h2>Atuação e Produtos</h2>  
+            <p><strong>Foco Principal:</strong> Futebol de campo, futsal, futevôlei e moda urbana (sportswear/streetwear).</p>  
+            <p><strong>Produtos:</strong> Camisas de clubes/seleções, chuteiras, bolas, tênis casuais e agasalhos.</p>  
+            <p><strong>No Brasil:</strong> A marca tem grande força no mercado brasileiro e patrocina diversos clubes de tradição, como Fluminense, Grêmio, Santos, Athletico-PR e Sport Recife.</p>  
+            <p><strong>Curiosidade:</strong> Em 2024, a Umbro completou 100 anos de história, sendo uma das poucas marcas do mercado esportivo a atingir o centenário mantendo forte presença no meio do futebol e no estilo casual (Bloke Core).</p>  
+        </section>
+
+        <section class="sustentabilidade">
+            <h2>Campanhas de Sustentabilidade e Futuro</h2>  
+            <p><strong>Linhas Recicladas:</strong> Recentemente, a marca passou a incorporar cada vez mais poliéster reciclado em suas coleções e uniformes oficiais de clubes parceiros.</p>  
+            <p><strong>Resgate do Retrô:</strong> A marca continua relançando coleções vintage que resgatam as estampas geométricas marcantes dos anos 80 e 90 para o público mais jovem.</p>  
+            <p><strong>Curiosidade:</strong> No Brasil, a Umbro costuma lançar coleções especiais no fim de ano para seus clubes patrocinados, como camisas em homenagem às nações ou à cultura local de cada time.</p>  
+        </section>
+    </main>
+</body>  
+</html>
