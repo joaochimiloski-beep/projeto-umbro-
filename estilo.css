@@ -1,43 +1,128 @@
-<!DOCTYPE html>  
-<html lang="pt-br">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Informações sobre a Umbro</title>  
-    <!-- Linha adicionada para vincular o arquivo CSS externo chamado style.css -->
-    <link rel="stylesheet" href="style.css">
-</head>  
-<body>  
-    <header>
-        <h1>INFORMAÇÃO SOBRE A UMBRO</h1>  
-    </header>
+/* Palette de cores e Variáveis Globais */
+:root {
+    --cor-fundo: #f4f5f7;
+    --cor-card: #ffffff;
+    --cor-texto: #222222;
+    --cor-destaque: #d32f2f;
+    --cor-header-fundo: #111111;
+    --cor-header-texto: #ffffff;
+    --cor-borda: #e0e0e0;
+}
 
-    <main>
-        <section class="introducao">
-            <p>A Umbro é uma das marcas esportivas mais tradicionais do mundo, famosa por sua ligação com o futebol e pelo logotipo com o duplo diamante.</p>  
-        </section>
+/* Reset Básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        <section class="historia">
-            <h2>História e Fundação</h2>
-            <p><strong>Fundação:</strong> A marca foi fundada em 23 de maio de 1924 na Inglaterra (em Wilmslow, perto de Manchester) pelos irmãos Harold e Wallace Humphreys.</p>  
-            <p><strong>Nome:</strong> O nome "Umbro" vem da junção de <em>Humphreys</em> e <em>Brothers</em> (Irmãos Humphreys).</p>  
-            <p><strong>Tradição no Futebol:</strong> A Umbro esteve presente em grandes momentos históricos. Ela vestiu a Seleção Brasileira na conquista do Tetra na Copa do Mundo de 1994 e a Seleção Inglesa no título de 1966.</p>  
-        </section>
+/* Estilo do Corpo da Página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    
+    /* Layout Flexbox na vertical */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-        <section class="atuacao">
-            <h2>Atuação e Produtos</h2>  
-            <p><strong>Foco Principal:</strong> Futebol de campo, futsal, futevôlei e moda urbana (sportswear/streetwear).</p>  
-            <p><strong>Produtos:</strong> Camisas de clubes/seleções, chuteiras, bolas, tênis casuais e agasalhos.</p>  
-            <p><strong>No Brasil:</strong> A marca tem grande força no mercado brasileiro e patrocina diversos clubes de tradição, como Fluminense, Grêmio, Santos, Athletico-PR e Sport Recife.</p>  
-            <p><strong>Curiosidade:</strong> Em 2024, a Umbro completou 100 anos de história, sendo uma das poucas marcas do mercado esportivo a atingir o centenário mantendo forte presença no meio do futebol e no estilo casual (Bloke Core).</p>  
-        </section>
+/* ESTILIZAÇÃO DO HEADER */
+header {
+    background-color: var(--cor-header-fundo);
+    color: var(--cor-header-texto);
+    padding: 2.5rem 1.5rem;
+    
+    /* Flexbox centralizado */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.75rem;
+    border-bottom: 4px solid var(--cor-destaque);
+}
 
-        <section class="sustentabilidade">
-            <h2>Campanhas de Sustentabilidade e Futuro</h2>  
-            <p><strong>Linhas Recicladas:</strong> Recentemente, a marca passou a incorporar cada vez mais poliéster reciclado em suas coleções e uniformes oficiais de clubes parceiros.</p>  
-            <p><strong>Resgate do Retrô:</strong> A marca continua relançando coleções vintage que resgatam as estampas geométricas marcantes dos anos 80 e 90 para o público mais jovem.</p>  
-            <p><strong>Curiosidade:</strong> No Brasil, a Umbro costuma lançar coleções especiais no fim de ano para seus clubes patrocinados, como camisas em homenagem às nações ou à cultura local de cada time.</p>  
-        </section>
-    </main>
-</body>  
-</html>
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+header p {
+    max-width: 650px;
+    color: #ccc;
+    font-size: 1.05rem;
+}
+
+/* ESTILIZAÇÃO DO CONTEÚDO PRINCIPAL (MAIN) */
+main {
+    flex: 1; /* Preenche a altura restante da página */
+    max-width: 1200px;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+
+    /* Flexbox para alinhar os cards das seções */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+/* ESTILIZAÇÃO DAS SEÇÕES (CARDS) */
+section {
+    background-color: var(--cor-card);
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    padding: 1.5rem;
+    
+    /* Flexbox interno nos cards */
+    flex: 1 1 300px; 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    font-size: 1.3rem;
+    color: var(--cor-header-fundo);
+    border-bottom: 2px solid var(--cor-destaque);
+    padding-bottom: 0.4rem;
+    margin-bottom: 0.5rem;
+}
+
+section p {
+    font-size: 0.95rem;
+}
+
+section strong {
+    color: var(--cor-destaque);
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-top: auto; /* Posiciona a imagem no final do card */
+    object-fit: cover;
+}
+
+/* ESTILIZAÇÃO DO FOOTER */
+footer {
+    background-color: var(--cor-header-fundo);
+    color: #888888;
+    padding: 1.2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
